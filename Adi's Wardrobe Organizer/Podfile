@@ -1,0 +1,11 @@
+platform :ios, "8.0"
+use_frameworks!
+
+target 'Adi\'s Wardrobe Organizer' do
+
+  use_frameworks!
+  pod 'YangMingShan'
+  pod 'SDWebImage', '~>3.8'
+
+
+end

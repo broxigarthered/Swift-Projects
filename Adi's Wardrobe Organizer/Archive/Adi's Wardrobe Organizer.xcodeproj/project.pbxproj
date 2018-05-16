@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F10CDBB35F96D282F8989DB /* Pods_Adi_s_Wardrobe_Organizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9CDBE8A844C9E82172B670 /* Pods_Adi_s_Wardrobe_Organizer.framework */; };
+		9500DC7D1D84A54000F10F2A /* WishlistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500DC7C1D84A54000F10F2A /* WishlistController.swift */; };
+		9500DC7F1D84A63600F10F2A /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500DC7E1D84A63600F10F2A /* WishlistCell.swift */; };
+		95011AAF1CF4683B00F07270 /* PhotosAddCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95011AAE1CF4683B00F07270 /* PhotosAddCombination.swift */; };
+		95011AB11CF4EC6600F07270 /* CombinationsImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95011AB01CF4EC6600F07270 /* CombinationsImageCell.swift */; };
+		95011AB31CFDD86B00F07270 /* NewCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95011AB21CFDD86B00F07270 /* NewCombination.swift */; };
+		95011AB61D00234800F07270 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95011AB51D00234800F07270 /* CosmosDistrib.swift */; };
+		95011AB91D021BCD00F07270 /* CombinationMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95011AB81D021BCD00F07270 /* CombinationMO.swift */; };
+		95134ECA1CEE0B5800E74983 /* CombinationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95134EC91CEE0B5800E74983 /* CombinationsController.swift */; };
+		95165A791D8733190054E818 /* NewWishlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95165A781D8733190054E818 /* NewWishlistItem.swift */; };
+		95323F051E31554B002E3BCA /* ACPhotoEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95323F041E31554B002E3BCA /* ACPhotoEditVC.swift */; };
+		953676721CEE13AC009C23EB /* CombinationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953676711CEE13AC009C23EB /* CombinationsCell.swift */; };
+		956CA9191CE77632008FC240 /* ClothMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA9181CE77632008FC240 /* ClothMO.swift */; };
+		956CA91C1CE90DF1008FC240 /* ClothImageMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956CA91A1CE90DF1008FC240 /* ClothImageMO.swift */; };
+		95710F071CC6B8750039521E /* SeasonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F061CC6B8750039521E /* SeasonsTableViewController.swift */; };
+		95710F0C1CC77C1B0039521E /* SeasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F0B1CC77C1B0039521E /* SeasonCell.swift */; };
+		95710F111CC8CC800039521E /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F101CC8CC800039521E /* CollectionController.swift */; };
+		95710F131CC8E2D60039521E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95710F121CC8E2D60039521E /* Main.storyboard */; };
+		95710F171CCA904D0039521E /* SeasonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F161CCA904D0039521E /* SeasonCollectionCell.swift */; };
+		95710F191CCD5F330039521E /* ClothesCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F181CCD5F330039521E /* ClothesCollectionController.swift */; };
+		95710F1B1CCD79CE0039521E /* ClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F1A1CCD79CE0039521E /* ClothesCell.swift */; };
+		95710F1D1CCE15BE0039521E /* ManipulateImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F1C1CCE15BE0039521E /* ManipulateImageController.swift */; };
+		95710F6D1CDA55020039521E /* ManagePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F6C1CDA55020039521E /* ManagePhotoController.swift */; };
+		95710F6F1CDB7E3C0039521E /* PopOverPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95710F6E1CDB7E3C0039521E /* PopOverPhotoViewController.swift */; };
+		95879F001D0FECEA00AC130C /* TagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95879EFF1D0FECEA00AC130C /* TagsCell.swift */; };
+		9590DDA91CC68CC300548999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590DDA81CC68CC300548999 /* AppDelegate.swift */; };
+		9590DDAB1CC68CC300548999 /* WardrobeMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590DDAA1CC68CC300548999 /* WardrobeMainController.swift */; };
+		9590DDB11CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9590DDAF1CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodeld */; };
+		9590DDB31CC68CC300548999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9590DDB21CC68CC300548999 /* Assets.xcassets */; };
+		9590DDB61CC68CC300548999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9590DDB41CC68CC300548999 /* LaunchScreen.storyboard */; };
+		959D53371E26D45800FBCA30 /* CombinationThumbnailMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959D53361E26D45800FBCA30 /* CombinationThumbnailMO.swift */; };
+		95C578211D042CCD00316ECE /* CombinationImageMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C578201D042CCD00316ECE /* CombinationImageMO.swift */; };
+		95DEEE551D09A22200944227 /* TagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DEEE541D09A22200944227 /* TagsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9500DC7C1D84A54000F10F2A /* WishlistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistController.swift; sourceTree = "<group>"; };
+		9500DC7E1D84A63600F10F2A /* WishlistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
+		95011AAE1CF4683B00F07270 /* PhotosAddCombination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosAddCombination.swift; sourceTree = "<group>"; };
+		95011AB01CF4EC6600F07270 /* CombinationsImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsImageCell.swift; sourceTree = "<group>"; };
+		95011AB21CFDD86B00F07270 /* NewCombination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCombination.swift; sourceTree = "<group>"; };
+		95011AB51D00234800F07270 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
+		95011AB81D021BCD00F07270 /* CombinationMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationMO.swift; sourceTree = "<group>"; };
+		95134EC91CEE0B5800E74983 /* CombinationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsController.swift; sourceTree = "<group>"; };
+		95165A781D8733190054E818 /* NewWishlistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWishlistItem.swift; sourceTree = "<group>"; };
+		95323F041E31554B002E3BCA /* ACPhotoEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPhotoEditVC.swift; sourceTree = "<group>"; };
+		953676711CEE13AC009C23EB /* CombinationsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationsCell.swift; sourceTree = "<group>"; };
+		956CA9181CE77632008FC240 /* ClothMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothMO.swift; sourceTree = "<group>"; };
+		956CA91A1CE90DF1008FC240 /* ClothImageMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothImageMO.swift; sourceTree = "<group>"; };
+		95710F061CC6B8750039521E /* SeasonsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeasonsTableViewController.swift; path = "Adi's Wardrobe Organizer/SeasonsTableViewController.swift"; sourceTree = "<group>"; };
+		95710F0B1CC77C1B0039521E /* SeasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonCell.swift; sourceTree = "<group>"; };
+		95710F101CC8CC800039521E /* CollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
+		95710F121CC8E2D60039521E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		95710F161CCA904D0039521E /* SeasonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonCollectionCell.swift; sourceTree = "<group>"; };
+		95710F181CCD5F330039521E /* ClothesCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesCollectionController.swift; sourceTree = "<group>"; };
+		95710F1A1CCD79CE0039521E /* ClothesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesCell.swift; sourceTree = "<group>"; };
+		95710F1C1CCE15BE0039521E /* ManipulateImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulateImageController.swift; sourceTree = "<group>"; };
+		95710F6C1CDA55020039521E /* ManagePhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagePhotoController.swift; sourceTree = "<group>"; };
+		95710F6E1CDB7E3C0039521E /* PopOverPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverPhotoViewController.swift; sourceTree = "<group>"; };
+		95879EFF1D0FECEA00AC130C /* TagsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsCell.swift; sourceTree = "<group>"; };
+		9590DDA51CC68CC300548999 /* Adi's Wardrobe Organizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adi's Wardrobe Organizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9590DDA81CC68CC300548999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9590DDAA1CC68CC300548999 /* WardrobeMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WardrobeMainController.swift; path = "Adi's Wardrobe Organizer/WardrobeMainController.swift"; sourceTree = "<group>"; };
+		9590DDB01CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adi_s_Wardrobe_Organizer.xcdatamodel; sourceTree = "<group>"; };
+		9590DDB21CC68CC300548999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9590DDB51CC68CC300548999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9590DDB71CC68CC300548999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959D53361E26D45800FBCA30 /* CombinationThumbnailMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationThumbnailMO.swift; sourceTree = "<group>"; };
+		95C578201D042CCD00316ECE /* CombinationImageMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinationImageMO.swift; sourceTree = "<group>"; };
+		95DEEE541D09A22200944227 /* TagsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsTableViewController.swift; sourceTree = "<group>"; };
+		9D9CDBE8A844C9E82172B670 /* Pods_Adi_s_Wardrobe_Organizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adi_s_Wardrobe_Organizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE4F82EA880F62F3B638459 /* Pods-Adi's Wardrobe Organizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adi's Wardrobe Organizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adi's Wardrobe Organizer/Pods-Adi's Wardrobe Organizer.release.xcconfig"; sourceTree = "<group>"; };
+		FBCDD9B8D32D9FDD8D2E421D /* Pods-Adi's Wardrobe Organizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adi's Wardrobe Organizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adi's Wardrobe Organizer/Pods-Adi's Wardrobe Organizer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9590DDA21CC68CC300548999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F10CDBB35F96D282F8989DB /* Pods_Adi_s_Wardrobe_Organizer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		389D247815196F6C0478A732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D9CDBE8A844C9E82172B670 /* Pods_Adi_s_Wardrobe_Organizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82F4ECCD2712D2D4D89EE4C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBCDD9B8D32D9FDD8D2E421D /* Pods-Adi's Wardrobe Organizer.debug.xcconfig */,
+				AEE4F82EA880F62F3B638459 /* Pods-Adi's Wardrobe Organizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95011AB41D00233400F07270 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				95011AB51D00234800F07270 /* CosmosDistrib.swift */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
+		95011AB71D021BA200F07270 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				956CA91A1CE90DF1008FC240 /* ClothImageMO.swift */,
+				956CA9181CE77632008FC240 /* ClothMO.swift */,
+				95011AB81D021BCD00F07270 /* CombinationMO.swift */,
+				95C578201D042CCD00316ECE /* CombinationImageMO.swift */,
+				959D53361E26D45800FBCA30 /* CombinationThumbnailMO.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		95323F061E315553002E3BCA /* PhotosACSubcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				95323F041E31554B002E3BCA /* ACPhotoEditVC.swift */,
+			);
+			name = PhotosACSubcontrollers;
+			sourceTree = "<group>";
+		};
+		95710F0A1CC771C90039521E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95DEEE531D09A1E900944227 /* New Combinations Sub Controllers */,
+				95710F061CC6B8750039521E /* SeasonsTableViewController.swift */,
+				9590DDAA1CC68CC300548999 /* WardrobeMainController.swift */,
+				95710F101CC8CC800039521E /* CollectionController.swift */,
+				95710F181CCD5F330039521E /* ClothesCollectionController.swift */,
+				95710F1C1CCE15BE0039521E /* ManipulateImageController.swift */,
+				95710F6C1CDA55020039521E /* ManagePhotoController.swift */,
+				95134EC91CEE0B5800E74983 /* CombinationsController.swift */,
+				95011AB21CFDD86B00F07270 /* NewCombination.swift */,
+				9500DC7C1D84A54000F10F2A /* WishlistController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95710F701CDC69460039521E /* Pop Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95710F6E1CDB7E3C0039521E /* PopOverPhotoViewController.swift */,
+			);
+			name = "Pop Controllers";
+			sourceTree = "<group>";
+		};
+		95710F711CDE0AEF0039521E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95710F1A1CCD79CE0039521E /* ClothesCell.swift */,
+				95710F161CCA904D0039521E /* SeasonCollectionCell.swift */,
+				95710F0B1CC77C1B0039521E /* SeasonCell.swift */,
+				953676711CEE13AC009C23EB /* CombinationsCell.swift */,
+				95011AB01CF4EC6600F07270 /* CombinationsImageCell.swift */,
+				95879EFF1D0FECEA00AC130C /* TagsCell.swift */,
+				9500DC7E1D84A63600F10F2A /* WishlistCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		9590DD9C1CC68CC200548999 = {
+			isa = PBXGroup;
+			children = (
+				95011AB71D021BA200F07270 /* Core Data */,
+				95011AB41D00233400F07270 /* Additional */,
+				95710F711CDE0AEF0039521E /* Cells */,
+				95710F701CDC69460039521E /* Pop Controllers */,
+				95710F0A1CC771C90039521E /* ViewControllers */,
+				9590DDA71CC68CC300548999 /* Adi's Wardrobe Organizer */,
+				9590DDA61CC68CC300548999 /* Products */,
+				82F4ECCD2712D2D4D89EE4C2 /* Pods */,
+				389D247815196F6C0478A732 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9590DDA61CC68CC300548999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9590DDA51CC68CC300548999 /* Adi's Wardrobe Organizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9590DDA71CC68CC300548999 /* Adi's Wardrobe Organizer */ = {
+			isa = PBXGroup;
+			children = (
+				9590DDA81CC68CC300548999 /* AppDelegate.swift */,
+				95710F121CC8E2D60039521E /* Main.storyboard */,
+				9590DDB41CC68CC300548999 /* LaunchScreen.storyboard */,
+				9590DDB21CC68CC300548999 /* Assets.xcassets */,
+				9590DDB71CC68CC300548999 /* Info.plist */,
+				9590DDAF1CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodeld */,
+			);
+			path = "Adi's Wardrobe Organizer";
+			sourceTree = "<group>";
+		};
+		95DEEE531D09A1E900944227 /* New Combinations Sub Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95011AAE1CF4683B00F07270 /* PhotosAddCombination.swift */,
+				95DEEE541D09A22200944227 /* TagsTableViewController.swift */,
+				95165A781D8733190054E818 /* NewWishlistItem.swift */,
+				95323F061E315553002E3BCA /* PhotosACSubcontrollers */,
+			);
+			name = "New Combinations Sub Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9590DDA41CC68CC300548999 /* Adi's Wardrobe Organizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9590DDBA1CC68CC300548999 /* Build configuration list for PBXNativeTarget "Adi's Wardrobe Organizer" */;
+			buildPhases = (
+				47EFEA89EE36700DED529F58 /* [CP] Check Pods Manifest.lock */,
+				9590DDA11CC68CC300548999 /* Sources */,
+				9590DDA21CC68CC300548999 /* Frameworks */,
+				9590DDA31CC68CC300548999 /* Resources */,
+				A303281DDA28820BCDF4A67E /* [CP] Embed Pods Frameworks */,
+				F122D70963D933CCA080D307 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adi's Wardrobe Organizer";
+			productName = "Adi's Wardrobe Organizer";
+			productReference = 9590DDA51CC68CC300548999 /* Adi's Wardrobe Organizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9590DD9D1CC68CC200548999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Nikolay;
+				TargetAttributes = {
+					9590DDA41CC68CC300548999 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QG78DVQ32Q;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 9590DDA01CC68CC200548999 /* Build configuration list for PBXProject "Adi's Wardrobe Organizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9590DD9C1CC68CC200548999;
+			productRefGroup = 9590DDA61CC68CC300548999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9590DDA41CC68CC300548999 /* Adi's Wardrobe Organizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9590DDA31CC68CC300548999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9590DDB61CC68CC300548999 /* LaunchScreen.storyboard in Resources */,
+				9590DDB31CC68CC300548999 /* Assets.xcassets in Resources */,
+				95710F131CC8E2D60039521E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47EFEA89EE36700DED529F58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A303281DDA28820BCDF4A67E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adi's Wardrobe Organizer/Pods-Adi's Wardrobe Organizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F122D70963D933CCA080D307 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adi's Wardrobe Organizer/Pods-Adi's Wardrobe Organizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9590DDA11CC68CC300548999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95879F001D0FECEA00AC130C /* TagsCell.swift in Sources */,
+				95710F071CC6B8750039521E /* SeasonsTableViewController.swift in Sources */,
+				95C578211D042CCD00316ECE /* CombinationImageMO.swift in Sources */,
+				956CA9191CE77632008FC240 /* ClothMO.swift in Sources */,
+				9500DC7D1D84A54000F10F2A /* WishlistController.swift in Sources */,
+				95710F1B1CCD79CE0039521E /* ClothesCell.swift in Sources */,
+				95011AB61D00234800F07270 /* CosmosDistrib.swift in Sources */,
+				95134ECA1CEE0B5800E74983 /* CombinationsController.swift in Sources */,
+				95011AB91D021BCD00F07270 /* CombinationMO.swift in Sources */,
+				95710F111CC8CC800039521E /* CollectionController.swift in Sources */,
+				959D53371E26D45800FBCA30 /* CombinationThumbnailMO.swift in Sources */,
+				95710F191CCD5F330039521E /* ClothesCollectionController.swift in Sources */,
+				9590DDAB1CC68CC300548999 /* WardrobeMainController.swift in Sources */,
+				95011AAF1CF4683B00F07270 /* PhotosAddCombination.swift in Sources */,
+				953676721CEE13AC009C23EB /* CombinationsCell.swift in Sources */,
+				95011AB11CF4EC6600F07270 /* CombinationsImageCell.swift in Sources */,
+				95710F0C1CC77C1B0039521E /* SeasonCell.swift in Sources */,
+				95710F6F1CDB7E3C0039521E /* PopOverPhotoViewController.swift in Sources */,
+				95011AB31CFDD86B00F07270 /* NewCombination.swift in Sources */,
+				9500DC7F1D84A63600F10F2A /* WishlistCell.swift in Sources */,
+				9590DDA91CC68CC300548999 /* AppDelegate.swift in Sources */,
+				95710F6D1CDA55020039521E /* ManagePhotoController.swift in Sources */,
+				9590DDB11CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodeld in Sources */,
+				95710F171CCA904D0039521E /* SeasonCollectionCell.swift in Sources */,
+				956CA91C1CE90DF1008FC240 /* ClothImageMO.swift in Sources */,
+				95710F1D1CCE15BE0039521E /* ManipulateImageController.swift in Sources */,
+				95DEEE551D09A22200944227 /* TagsTableViewController.swift in Sources */,
+				95323F051E31554B002E3BCA /* ACPhotoEditVC.swift in Sources */,
+				95165A791D8733190054E818 /* NewWishlistItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9590DDB41CC68CC300548999 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9590DDB51CC68CC300548999 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9590DDB81CC68CC300548999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9590DDB91CC68CC300548999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9590DDBB1CC68CC300548999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCDD9B8D32D9FDD8D2E421D /* Pods-Adi's Wardrobe Organizer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QG78DVQ32Q;
+				INFOPLIST_FILE = "Adi's Wardrobe Organizer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thunderseekers-NnA.Adi-s-Wardrobe-Organizer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9590DDBC1CC68CC300548999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE4F82EA880F62F3B638459 /* Pods-Adi's Wardrobe Organizer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QG78DVQ32Q;
+				INFOPLIST_FILE = "Adi's Wardrobe Organizer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thunderseekers-NnA.Adi-s-Wardrobe-Organizer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9590DDA01CC68CC200548999 /* Build configuration list for PBXProject "Adi's Wardrobe Organizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9590DDB81CC68CC300548999 /* Debug */,
+				9590DDB91CC68CC300548999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9590DDBA1CC68CC300548999 /* Build configuration list for PBXNativeTarget "Adi's Wardrobe Organizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9590DDBB1CC68CC300548999 /* Debug */,
+				9590DDBC1CC68CC300548999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9590DDAF1CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9590DDB01CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodel */,
+			);
+			currentVersion = 9590DDB01CC68CC300548999 /* Adi_s_Wardrobe_Organizer.xcdatamodel */;
+			path = Adi_s_Wardrobe_Organizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9590DD9D1CC68CC200548999 /* Project object */;
+}

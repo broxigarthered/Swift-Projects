@@ -1,0 +1,6 @@
+framework module Pods_Adi_s_Wardrobe_Organizer {
+  umbrella header "Pods-Adi's Wardrobe Organizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

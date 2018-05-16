@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019E9FC77B3A11B03974DF1654DE75AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF79B09520E941A4FF2B7FAE16CD245 /* UIKit.framework */; };
+		04211240980FD610A1D3CDCC3DB30DA5 /* UIViewController+YMSPhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AE617CF036216609EDDE7619EDB72 /* UIViewController+YMSPhotoHelper.m */; };
+		095EA7B01F454A6BD7C8124B1A64F93C /* YMSAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3EB4CCBADC7AF524E3BBAA307C3922 /* YMSAlbumCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1367FB563C6880F862C60CAE3BA1D9BA /* YMSPhotoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 85048EAC40756AEA8B90498D723119C3 /* YMSPhotoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1853E10809ABAD630BDCB0BC81130DA0 /* UIScrollView+YMSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6513FBE1524579FC3D0A89733F65A4 /* UIScrollView+YMSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D24CF796517DE5151F64D0BE0A17480 /* YMSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E88B20FC1A2691BB1C9C0D009B699A3 /* YMSPhotoCell.m */; };
+		207059FC7ACE1D0D82D550C6E33D3885 /* YMSCameraCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CC4351D03422E182AAE99A540A2BD427 /* YMSCameraCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22C57B4484D6B475EEF0CFFC6F1246D6 /* UITableViewCell+YMSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E9D1515941237E6B7010FDE2C29AA0 /* UITableViewCell+YMSConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B6534BF4C71CDC055661AF25146DCE /* YMSPhotoPickerTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = EAED8919B811DF140B94569E09398CDB /* YMSPhotoPickerTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		331CA88412645F8E34FBE45C8DF25348 /* YMSAlbumPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5778F8DA9FD9DEE066B8509A103A2B81 /* YMSAlbumPickerViewController.xib */; };
+		3AD635FFC2F7FBDB909899318AD12BB4 /* Pods-Adi's Wardrobe Organizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B83DD99BD24E9EF53B9EE3BE819A8517 /* Pods-Adi's Wardrobe Organizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E313BF347A3F1832DB3CC94317D5F40 /* YMSPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B4D5842F15BB789FD3F5103AD3B60A /* YMSPhotoPickerViewController.m */; };
+		51262B75FF26BD736167951A42E46CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA16D27DC7B81B6916E621C95DA6A44 /* Foundation.framework */; };
+		512C1FBBFC642A2725C083611713CFDB /* Pods-Adi's Wardrobe Organizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0DEEAAF3B29A3B5A3B1954B7CA2F5 /* Pods-Adi's Wardrobe Organizer-dummy.m */; };
+		57CD0190F2560652B1937C04B2CFC2CA /* YMSPhotoPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838F2451EAA3986002BC4A1A0467F7DD /* YMSPhotoPickerViewController.xib */; };
+		5860A0814849FC4AA5B7A780377F01A8 /* YMSCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5730014FF378F6C9297ABAB03A947A0C /* YMSCameraCell.xib */; };
+		690CFF264C5CA6B7E87862AF35B14A8C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A87444579C7439F6E1A675523E4F527 /* Photos.framework */; };
+		741C359FF33932DE9664722EC7C87607 /* YMSCameraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 155BED4C7D35ADF2A58C29B5743E7B75 /* YMSCameraCell.m */; };
+		7A3675C4DEA3655CF59961E89A532954 /* UIViewController+YMSPhotoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A1E912B089DE15EE84163F10FACC66 /* UIViewController+YMSPhotoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BD619A8810AE984D1A0D0FE0C865977 /* YMSAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D893085658F2C87F96FF1524AD692E1A /* YMSAlbumCell.m */; };
+		80B57F9BD1A810261E01C6C1F294D8F4 /* YMSPhotoPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DFDC147A09105300F70D087C5AF20F0D /* YMSPhotoPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81FE327AA5FDBDCA5D054F0F839E76E8 /* YMSPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84678EDE37DAC764CA08CF22EE0BD0E /* YMSPhotoCell.xib */; };
+		86893A0B6AFDC16F41E7CC48A4A5AF5C /* YangMingShan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D804EBAF28D25900A1FE98D97737B8 /* YangMingShan-dummy.m */; };
+		8C34B6F60A8F3F381E356ADC34B8C371 /* YMSAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F14ACE95C4170B979F9D93A6741DC46 /* YMSAlbumCell.xib */; };
+		940C2739FCFBCA99F6019A0FA03BD1C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA16D27DC7B81B6916E621C95DA6A44 /* Foundation.framework */; };
+		957D1E42FFC3AC8A934B633A79F77D2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC435B33D85580E577DBBB60E095623 /* QuartzCore.framework */; };
+		9856B6FAE8627C473209826786632B54 /* UIScrollView+YMSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F97BBE181250CF73F9F1066D63F11B /* UIScrollView+YMSAdditions.m */; };
+		986BFE20D5049B67F408E31185086576 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50B7F2639F7B8F4C7D4101D89277C7A /* AVFoundation.framework */; };
+		A0F86A8E06DEC6A8DAB6C4ED38846DE4 /* YangMingShan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD86032BBF1547F2ABFDEE5FDDB6F94 /* YangMingShan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A499BB84D2553BAFF7901262BC0477F4 /* YMSSinglePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FE3DB21F18CFF99CE653F22BE75E0 /* YMSSinglePhotoViewController.m */; };
+		B4AE1DBEAFDE1BB175362F830A6A62F6 /* YMSAlbumPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F938CF48A4E2EC8FB153454E2B662B /* YMSAlbumPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9541A48EEA1D95C9198265CF13956C6 /* UITableViewCell+YMSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FD59BCFD6D40FF081E99BE944784AD96 /* UITableViewCell+YMSConfig.m */; };
+		CA3AA1129329B5A487718293993E78FC /* YMSAlbumPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446F985B67BD84D13B6A8391208BE0B9 /* YMSAlbumPickerViewController.m */; };
+		CA3E6C5F3F3C59E2193A66B0590954B9 /* YMSSinglePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 723C59CCBD4C868300B76A53516D0F59 /* YMSSinglePhotoViewController.xib */; };
+		D9CA9A903435E78C3F1E95767C9B7B85 /* YMSPhotoPickerTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A8790B2449946DBD8CA25E2EF45429 /* YMSPhotoPickerTheme.m */; };
+		D9CD95CE42B33AC7C7F8C10177F8C7F7 /* YMSSinglePhotoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF61844961856599AD433E10A62ED87 /* YMSSinglePhotoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4ABC623656FFEE3BEC260FC332CCE97 /* YMSPhotoPickerAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8900831636D6ED9D40C8CA2A42743E /* YMSPhotoPickerAssets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		692EBB574880AB890FE1A5C74CD5A5DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D165991A3B5CEB57A4E233C9C6933C57;
+			remoteInfo = YangMingShan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D0E1B1119E1B31532ED0AE8DACCCAF /* Pods-Adi's Wardrobe Organizer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Adi's Wardrobe Organizer-acknowledgements.plist"; sourceTree = "<group>"; };
+		07A8790B2449946DBD8CA25E2EF45429 /* YMSPhotoPickerTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSPhotoPickerTheme.m; path = YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerTheme.m; sourceTree = "<group>"; };
+		0AB45EBD2FDDEFB23BC501F8DC57C191 /* Pods-Adi's Wardrobe Organizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adi's Wardrobe Organizer.debug.xcconfig"; sourceTree = "<group>"; };
+		155BED4C7D35ADF2A58C29B5743E7B75 /* YMSCameraCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSCameraCell.m; path = YangMingShan/YMSPhotoPicker/Private/YMSCameraCell.m; sourceTree = "<group>"; };
+		3177A2D38B0BC7566B74DC36ED69386D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5FE3DB21F18CFF99CE653F22BE75E0 /* YMSSinglePhotoViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSSinglePhotoViewController.m; path = YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.m; sourceTree = "<group>"; };
+		3AC435B33D85580E577DBBB60E095623 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3AE0DEEAAF3B29A3B5A3B1954B7CA2F5 /* Pods-Adi's Wardrobe Organizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Adi's Wardrobe Organizer-dummy.m"; sourceTree = "<group>"; };
+		41D5BE65FBE118F48F5F7ECC8BC8755A /* YangMingShan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YangMingShan.xcconfig; sourceTree = "<group>"; };
+		446F985B67BD84D13B6A8391208BE0B9 /* YMSAlbumPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSAlbumPickerViewController.m; path = YangMingShan/YMSPhotoPicker/Private/YMSAlbumPickerViewController.m; sourceTree = "<group>"; };
+		46CA2CAA449E01168B7BBD68815F0437 /* YangMingShan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YangMingShan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F14ACE95C4170B979F9D93A6741DC46 /* YMSAlbumCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMSAlbumCell.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSAlbumCell.xib; sourceTree = "<group>"; };
+		531D84AFB366DB0D0AB3BBF3A9C277D4 /* Pods-Adi's Wardrobe Organizer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Adi's Wardrobe Organizer-resources.sh"; sourceTree = "<group>"; };
+		5730014FF378F6C9297ABAB03A947A0C /* YMSCameraCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMSCameraCell.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSCameraCell.xib; sourceTree = "<group>"; };
+		5778F8DA9FD9DEE066B8509A103A2B81 /* YMSAlbumPickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMSAlbumPickerViewController.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSAlbumPickerViewController.xib; sourceTree = "<group>"; };
+		608DB9CC28818B5B15FAEC9290DF12DF /* Pods-Adi's Wardrobe Organizer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Adi's Wardrobe Organizer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6CC741DE58B73EE0C00296934D16136A /* Pods-Adi's Wardrobe Organizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Adi's Wardrobe Organizer.release.xcconfig"; sourceTree = "<group>"; };
+		6EF79B09520E941A4FF2B7FAE16CD245 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		723C59CCBD4C868300B76A53516D0F59 /* YMSSinglePhotoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMSSinglePhotoViewController.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.xib; sourceTree = "<group>"; };
+		7A0AE617CF036216609EDDE7619EDB72 /* UIViewController+YMSPhotoHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+YMSPhotoHelper.m"; path = "YangMingShan/YMSPhotoPicker/Public/UIViewController+YMSPhotoHelper.m"; sourceTree = "<group>"; };
+		82A1E912B089DE15EE84163F10FACC66 /* UIViewController+YMSPhotoHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+YMSPhotoHelper.h"; path = "YangMingShan/YMSPhotoPicker/Public/UIViewController+YMSPhotoHelper.h"; sourceTree = "<group>"; };
+		838F2451EAA3986002BC4A1A0467F7DD /* YMSPhotoPickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMSPhotoPickerViewController.xib; path = YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerViewController.xib; sourceTree = "<group>"; };
+		84F938CF48A4E2EC8FB153454E2B662B /* YMSAlbumPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSAlbumPickerViewController.h; path = YangMingShan/YMSPhotoPicker/Private/YMSAlbumPickerViewController.h; sourceTree = "<group>"; };
+		85048EAC40756AEA8B90498D723119C3 /* YMSPhotoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSPhotoCell.h; path = YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.h; sourceTree = "<group>"; };
+		8A87444579C7439F6E1A675523E4F527 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		8E6513FBE1524579FC3D0A89733F65A4 /* UIScrollView+YMSAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+YMSAdditions.h"; path = "YangMingShan/YMSPhotoPicker/Private/UIScrollView+YMSAdditions.h"; sourceTree = "<group>"; };
+		8E88B20FC1A2691BB1C9C0D009B699A3 /* YMSPhotoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSPhotoCell.m; path = YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97D5AB29F9F58A0BF2EDF51611D6A087 /* YangMingShan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YangMingShan.modulemap; sourceTree = "<group>"; };
+		9C8B355D944F2B916917466852E5786E /* YangMingShan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YangMingShan-prefix.pch"; sourceTree = "<group>"; };
+		AA3EB4CCBADC7AF524E3BBAA307C3922 /* YMSAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSAlbumCell.h; path = YangMingShan/YMSPhotoPicker/Private/YMSAlbumCell.h; sourceTree = "<group>"; };
+		ACF61844961856599AD433E10A62ED87 /* YMSSinglePhotoViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSSinglePhotoViewController.h; path = YangMingShan/YMSPhotoPicker/Private/YMSSinglePhotoViewController.h; sourceTree = "<group>"; };
+		B83DD99BD24E9EF53B9EE3BE819A8517 /* Pods-Adi's Wardrobe Organizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Adi's Wardrobe Organizer-umbrella.h"; sourceTree = "<group>"; };
+		B8E9D1515941237E6B7010FDE2C29AA0 /* UITableViewCell+YMSConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+YMSConfig.h"; path = "YangMingShan/YMSPhotoPicker/Private/UITableViewCell+YMSConfig.h"; sourceTree = "<group>"; };
+		BF8900831636D6ED9D40C8CA2A42743E /* YMSPhotoPickerAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = YMSPhotoPickerAssets.xcassets; path = YangMingShan/YMSPhotoPicker/YMSPhotoPickerAssets.xcassets; sourceTree = "<group>"; };
+		C547759D6B8C74BF9AADB1401B929425 /* Pods-Adi's Wardrobe Organizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Adi's Wardrobe Organizer.modulemap"; sourceTree = "<group>"; };
+		C5D804EBAF28D25900A1FE98D97737B8 /* YangMingShan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YangMingShan-dummy.m"; sourceTree = "<group>"; };
+		C9F6DAEE12B27477A5FBD45B667F4D5A /* Pods_Adi_s_Wardrobe_Organizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adi_s_Wardrobe_Organizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4351D03422E182AAE99A540A2BD427 /* YMSCameraCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSCameraCell.h; path = YangMingShan/YMSPhotoPicker/Private/YMSCameraCell.h; sourceTree = "<group>"; };
+		CDD86032BBF1547F2ABFDEE5FDDB6F94 /* YangMingShan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YangMingShan-umbrella.h"; sourceTree = "<group>"; };
+		D0F97BBE181250CF73F9F1066D63F11B /* UIScrollView+YMSAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+YMSAdditions.m"; path = "YangMingShan/YMSPhotoPicker/Private/UIScrollView+YMSAdditions.m"; sourceTree = "<group>"; };
+		D4B4D5842F15BB789FD3F5103AD3B60A /* YMSPhotoPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSPhotoPickerViewController.m; path = YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerViewController.m; sourceTree = "<group>"; };
+		D84678EDE37DAC764CA08CF22EE0BD0E /* YMSPhotoCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YMSPhotoCell.xib; path = YangMingShan/YMSPhotoPicker/Private/YMSPhotoCell.xib; sourceTree = "<group>"; };
+		D893085658F2C87F96FF1524AD692E1A /* YMSAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMSAlbumCell.m; path = YangMingShan/YMSPhotoPicker/Private/YMSAlbumCell.m; sourceTree = "<group>"; };
+		D8BBB74D10C80F2B0CD525921FB39261 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFDC147A09105300F70D087C5AF20F0D /* YMSPhotoPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSPhotoPickerViewController.h; path = YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerViewController.h; sourceTree = "<group>"; };
+		EAED8919B811DF140B94569E09398CDB /* YMSPhotoPickerTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMSPhotoPickerTheme.h; path = YangMingShan/YMSPhotoPicker/Public/YMSPhotoPickerTheme.h; sourceTree = "<group>"; };
+		F50B7F2639F7B8F4C7D4101D89277C7A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		FB2115E6E81F9945CF07FEE86308E44B /* Pods-Adi's Wardrobe Organizer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Adi's Wardrobe Organizer-frameworks.sh"; sourceTree = "<group>"; };
+		FBA16D27DC7B81B6916E621C95DA6A44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FD59BCFD6D40FF081E99BE944784AD96 /* UITableViewCell+YMSConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+YMSConfig.m"; path = "YangMingShan/YMSPhotoPicker/Private/UITableViewCell+YMSConfig.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767F4D78691DFD14B1507BB1DC981D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51262B75FF26BD736167951A42E46CE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9C25F2E440522AE413CF71324C42AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986BFE20D5049B67F408E31185086576 /* AVFoundation.framework in Frameworks */,
+				940C2739FCFBCA99F6019A0FA03BD1C2 /* Foundation.framework in Frameworks */,
+				690CFF264C5CA6B7E87862AF35B14A8C /* Photos.framework in Frameworks */,
+				957D1E42FFC3AC8A934B633A79F77D2F /* QuartzCore.framework in Frameworks */,
+				019E9FC77B3A11B03974DF1654DE75AD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02AE489F86B84C6A2950BDDCCAC1AAB2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4D5E5FB9196A57078A371B65C145591 /* Pods-Adi's Wardrobe Organizer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74892C0022A7838A87636D09F5C2B444 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FCDEFD3F4CD55639F2DCA607CE1BD6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8BBB74D10C80F2B0CD525921FB39261 /* Info.plist */,
+				97D5AB29F9F58A0BF2EDF51611D6A087 /* YangMingShan.modulemap */,
+				41D5BE65FBE118F48F5F7ECC8BC8755A /* YangMingShan.xcconfig */,
+				C5D804EBAF28D25900A1FE98D97737B8 /* YangMingShan-dummy.m */,
+				9C8B355D944F2B916917466852E5786E /* YangMingShan-prefix.pch */,
+				CDD86032BBF1547F2ABFDEE5FDDB6F94 /* YangMingShan-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YangMingShan";
+			sourceTree = "<group>";
+		};
+		6107627A3E05BB3E1144ADAF05C3BB2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4746DB2B33EB63E4BFBDF12E288A0B9 /* YangMingShan */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		74892C0022A7838A87636D09F5C2B444 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F50B7F2639F7B8F4C7D4101D89277C7A /* AVFoundation.framework */,
+				FBA16D27DC7B81B6916E621C95DA6A44 /* Foundation.framework */,
+				8A87444579C7439F6E1A675523E4F527 /* Photos.framework */,
+				3AC435B33D85580E577DBBB60E095623 /* QuartzCore.framework */,
+				6EF79B09520E941A4FF2B7FAE16CD245 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				6107627A3E05BB3E1144ADAF05C3BB2E /* Pods */,
+				9A9B4F1F3A45D0B34B0679034D31ACB2 /* Products */,
+				02AE489F86B84C6A2950BDDCCAC1AAB2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BDD823C511CB9A777C4643EBDEDDE81 /* YMSPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				8E6513FBE1524579FC3D0A89733F65A4 /* UIScrollView+YMSAdditions.h */,
+				D0F97BBE181250CF73F9F1066D63F11B /* UIScrollView+YMSAdditions.m */,
+				B8E9D1515941237E6B7010FDE2C29AA0 /* UITableViewCell+YMSConfig.h */,
+				FD59BCFD6D40FF081E99BE944784AD96 /* UITableViewCell+YMSConfig.m */,
+				82A1E912B089DE15EE84163F10FACC66 /* UIViewController+YMSPhotoHelper.h */,
+				7A0AE617CF036216609EDDE7619EDB72 /* UIViewController+YMSPhotoHelper.m */,
+				AA3EB4CCBADC7AF524E3BBAA307C3922 /* YMSAlbumCell.h */,
+				D893085658F2C87F96FF1524AD692E1A /* YMSAlbumCell.m */,
+				84F938CF48A4E2EC8FB153454E2B662B /* YMSAlbumPickerViewController.h */,
+				446F985B67BD84D13B6A8391208BE0B9 /* YMSAlbumPickerViewController.m */,
+				CC4351D03422E182AAE99A540A2BD427 /* YMSCameraCell.h */,
+				155BED4C7D35ADF2A58C29B5743E7B75 /* YMSCameraCell.m */,
+				85048EAC40756AEA8B90498D723119C3 /* YMSPhotoCell.h */,
+				8E88B20FC1A2691BB1C9C0D009B699A3 /* YMSPhotoCell.m */,
+				EAED8919B811DF140B94569E09398CDB /* YMSPhotoPickerTheme.h */,
+				07A8790B2449946DBD8CA25E2EF45429 /* YMSPhotoPickerTheme.m */,
+				DFDC147A09105300F70D087C5AF20F0D /* YMSPhotoPickerViewController.h */,
+				D4B4D5842F15BB789FD3F5103AD3B60A /* YMSPhotoPickerViewController.m */,
+				ACF61844961856599AD433E10A62ED87 /* YMSSinglePhotoViewController.h */,
+				3A5FE3DB21F18CFF99CE653F22BE75E0 /* YMSSinglePhotoViewController.m */,
+				920F60617288C0A704921C55606070C3 /* Resources */,
+			);
+			name = YMSPhotoPicker;
+			sourceTree = "<group>";
+		};
+		920F60617288C0A704921C55606070C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F14ACE95C4170B979F9D93A6741DC46 /* YMSAlbumCell.xib */,
+				5778F8DA9FD9DEE066B8509A103A2B81 /* YMSAlbumPickerViewController.xib */,
+				5730014FF378F6C9297ABAB03A947A0C /* YMSCameraCell.xib */,
+				D84678EDE37DAC764CA08CF22EE0BD0E /* YMSPhotoCell.xib */,
+				BF8900831636D6ED9D40C8CA2A42743E /* YMSPhotoPickerAssets.xcassets */,
+				838F2451EAA3986002BC4A1A0467F7DD /* YMSPhotoPickerViewController.xib */,
+				723C59CCBD4C868300B76A53516D0F59 /* YMSSinglePhotoViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9A9B4F1F3A45D0B34B0679034D31ACB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9F6DAEE12B27477A5FBD45B667F4D5A /* Pods_Adi_s_Wardrobe_Organizer.framework */,
+				46CA2CAA449E01168B7BBD68815F0437 /* YangMingShan.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4746DB2B33EB63E4BFBDF12E288A0B9 /* YangMingShan */ = {
+			isa = PBXGroup;
+			children = (
+				3FCDEFD3F4CD55639F2DCA607CE1BD6D /* Support Files */,
+				8BDD823C511CB9A777C4643EBDEDDE81 /* YMSPhotoPicker */,
+			);
+			path = YangMingShan;
+			sourceTree = "<group>";
+		};
+		E4D5E5FB9196A57078A371B65C145591 /* Pods-Adi's Wardrobe Organizer */ = {
+			isa = PBXGroup;
+			children = (
+				3177A2D38B0BC7566B74DC36ED69386D /* Info.plist */,
+				C547759D6B8C74BF9AADB1401B929425 /* Pods-Adi's Wardrobe Organizer.modulemap */,
+				608DB9CC28818B5B15FAEC9290DF12DF /* Pods-Adi's Wardrobe Organizer-acknowledgements.markdown */,
+				03D0E1B1119E1B31532ED0AE8DACCCAF /* Pods-Adi's Wardrobe Organizer-acknowledgements.plist */,
+				3AE0DEEAAF3B29A3B5A3B1954B7CA2F5 /* Pods-Adi's Wardrobe Organizer-dummy.m */,
+				FB2115E6E81F9945CF07FEE86308E44B /* Pods-Adi's Wardrobe Organizer-frameworks.sh */,
+				531D84AFB366DB0D0AB3BBF3A9C277D4 /* Pods-Adi's Wardrobe Organizer-resources.sh */,
+				B83DD99BD24E9EF53B9EE3BE819A8517 /* Pods-Adi's Wardrobe Organizer-umbrella.h */,
+				0AB45EBD2FDDEFB23BC501F8DC57C191 /* Pods-Adi's Wardrobe Organizer.debug.xcconfig */,
+				6CC741DE58B73EE0C00296934D16136A /* Pods-Adi's Wardrobe Organizer.release.xcconfig */,
+			);
+			name = "Pods-Adi's Wardrobe Organizer";
+			path = "Target Support Files/Pods-Adi's Wardrobe Organizer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F65E76AEA96189528FF3B052EA60446 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD635FFC2F7FBDB909899318AD12BB4 /* Pods-Adi's Wardrobe Organizer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BCBAFD4E688608470360B41840056C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1853E10809ABAD630BDCB0BC81130DA0 /* UIScrollView+YMSAdditions.h in Headers */,
+				22C57B4484D6B475EEF0CFFC6F1246D6 /* UITableViewCell+YMSConfig.h in Headers */,
+				7A3675C4DEA3655CF59961E89A532954 /* UIViewController+YMSPhotoHelper.h in Headers */,
+				A0F86A8E06DEC6A8DAB6C4ED38846DE4 /* YangMingShan-umbrella.h in Headers */,
+				095EA7B01F454A6BD7C8124B1A64F93C /* YMSAlbumCell.h in Headers */,
+				B4AE1DBEAFDE1BB175362F830A6A62F6 /* YMSAlbumPickerViewController.h in Headers */,
+				207059FC7ACE1D0D82D550C6E33D3885 /* YMSCameraCell.h in Headers */,
+				1367FB563C6880F862C60CAE3BA1D9BA /* YMSPhotoCell.h in Headers */,
+				25B6534BF4C71CDC055661AF25146DCE /* YMSPhotoPickerTheme.h in Headers */,
+				80B57F9BD1A810261E01C6C1F294D8F4 /* YMSPhotoPickerViewController.h in Headers */,
+				D9CD95CE42B33AC7C7F8C10177F8C7F7 /* YMSSinglePhotoViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10BEB23CE206128208A3942BC290D731 /* Pods-Adi's Wardrobe Organizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6F86BD9D7310F1FE1AF82DD464A4C0A /* Build configuration list for PBXNativeTarget "Pods-Adi's Wardrobe Organizer" */;
+			buildPhases = (
+				75925F81496B9AB587B56B8E33855A8B /* Sources */,
+				767F4D78691DFD14B1507BB1DC981D1A /* Frameworks */,
+				7F65E76AEA96189528FF3B052EA60446 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F281D761F8CCAD3120F0D16B7FFCC8DA /* PBXTargetDependency */,
+			);
+			name = "Pods-Adi's Wardrobe Organizer";
+			productName = "Pods-Adi's Wardrobe Organizer";
+			productReference = C9F6DAEE12B27477A5FBD45B667F4D5A /* Pods_Adi_s_Wardrobe_Organizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D165991A3B5CEB57A4E233C9C6933C57 /* YangMingShan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B862557C41AF502CDDF989C778B6BF70 /* Build configuration list for PBXNativeTarget "YangMingShan" */;
+			buildPhases = (
+				341F98F0B7E1F46809798B6EF5574FC3 /* Sources */,
+				9E9C25F2E440522AE413CF71324C42AE /* Frameworks */,
+				E9BCBAFD4E688608470360B41840056C /* Headers */,
+				0CB502465B5A3712159C5BE3C7243DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YangMingShan;
+			productName = YangMingShan;
+			productReference = 46CA2CAA449E01168B7BBD68815F0437 /* YangMingShan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9A9B4F1F3A45D0B34B0679034D31ACB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10BEB23CE206128208A3942BC290D731 /* Pods-Adi's Wardrobe Organizer */,
+				D165991A3B5CEB57A4E233C9C6933C57 /* YangMingShan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CB502465B5A3712159C5BE3C7243DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C34B6F60A8F3F381E356ADC34B8C371 /* YMSAlbumCell.xib in Resources */,
+				331CA88412645F8E34FBE45C8DF25348 /* YMSAlbumPickerViewController.xib in Resources */,
+				5860A0814849FC4AA5B7A780377F01A8 /* YMSCameraCell.xib in Resources */,
+				81FE327AA5FDBDCA5D054F0F839E76E8 /* YMSPhotoCell.xib in Resources */,
+				E4ABC623656FFEE3BEC260FC332CCE97 /* YMSPhotoPickerAssets.xcassets in Resources */,
+				57CD0190F2560652B1937C04B2CFC2CA /* YMSPhotoPickerViewController.xib in Resources */,
+				CA3E6C5F3F3C59E2193A66B0590954B9 /* YMSSinglePhotoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		341F98F0B7E1F46809798B6EF5574FC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9856B6FAE8627C473209826786632B54 /* UIScrollView+YMSAdditions.m in Sources */,
+				B9541A48EEA1D95C9198265CF13956C6 /* UITableViewCell+YMSConfig.m in Sources */,
+				04211240980FD610A1D3CDCC3DB30DA5 /* UIViewController+YMSPhotoHelper.m in Sources */,
+				86893A0B6AFDC16F41E7CC48A4A5AF5C /* YangMingShan-dummy.m in Sources */,
+				7BD619A8810AE984D1A0D0FE0C865977 /* YMSAlbumCell.m in Sources */,
+				CA3AA1129329B5A487718293993E78FC /* YMSAlbumPickerViewController.m in Sources */,
+				741C359FF33932DE9664722EC7C87607 /* YMSCameraCell.m in Sources */,
+				1D24CF796517DE5151F64D0BE0A17480 /* YMSPhotoCell.m in Sources */,
+				D9CA9A903435E78C3F1E95767C9B7B85 /* YMSPhotoPickerTheme.m in Sources */,
+				4E313BF347A3F1832DB3CC94317D5F40 /* YMSPhotoPickerViewController.m in Sources */,
+				A499BB84D2553BAFF7901262BC0477F4 /* YMSSinglePhotoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75925F81496B9AB587B56B8E33855A8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512C1FBBFC642A2725C083611713CFDB /* Pods-Adi's Wardrobe Organizer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F281D761F8CCAD3120F0D16B7FFCC8DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YangMingShan;
+			target = D165991A3B5CEB57A4E233C9C6933C57 /* YangMingShan */;
+			targetProxy = 692EBB574880AB890FE1A5C74CD5A5DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		829D86F32250C71231101EBF60542BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D5BE65FBE118F48F5F7ECC8BC8755A /* YangMingShan.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YangMingShan/YangMingShan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YangMingShan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YangMingShan/YangMingShan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YangMingShan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5FEC68040BBDB384BB4FD13F5D32BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB45EBD2FDDEFB23BC501F8DC57C191 /* Pods-Adi's Wardrobe Organizer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Adi's Wardrobe Organizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adi's Wardrobe Organizer/Pods-Adi's Wardrobe Organizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Adi_s_Wardrobe_Organizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D64A4E1AB799D54417DB71FC6121F306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D5BE65FBE118F48F5F7ECC8BC8755A /* YangMingShan.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YangMingShan/YangMingShan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YangMingShan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YangMingShan/YangMingShan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YangMingShan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F14D4739681B8755112D784FEA0D0F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC741DE58B73EE0C00296934D16136A /* Pods-Adi's Wardrobe Organizer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Adi's Wardrobe Organizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Adi's Wardrobe Organizer/Pods-Adi's Wardrobe Organizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Adi_s_Wardrobe_Organizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B862557C41AF502CDDF989C778B6BF70 /* Build configuration list for PBXNativeTarget "YangMingShan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64A4E1AB799D54417DB71FC6121F306 /* Debug */,
+				829D86F32250C71231101EBF60542BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6F86BD9D7310F1FE1AF82DD464A4C0A /* Build configuration list for PBXNativeTarget "Pods-Adi's Wardrobe Organizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FEC68040BBDB384BB4FD13F5D32BB2 /* Debug */,
+				F14D4739681B8755112D784FEA0D0F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

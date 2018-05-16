@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15G1108" minimumToolsVersion="Automatic">
+    <entity name="Cloth" representedClassName=".ClothMO" syncable="YES">
+        <attribute name="clothType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="seasonName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imageTest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClothImage" inverseName="cloth" inverseEntity="ClothImage" syncable="YES"/>
+    </entity>
+    <entity name="ClothImage" representedClassName=".ClothImageMO" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="cloth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cloth" inverseName="imageTest" inverseEntity="Cloth" syncable="YES"/>
+    </entity>
+    <entity name="Combination" representedClassName=".CombinationMO" syncable="YES">
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="season" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CombinationImage" inverseName="combination" inverseEntity="CombinationImage" syncable="YES"/>
+        <relationship name="thumbnails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CombinationThumbnail" inverseName="combination" inverseEntity="CombinationThumbnail" syncable="YES"/>
+    </entity>
+    <entity name="CombinationImage" representedClassName=".CombinationImageMO" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="combination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Combination" inverseName="images" inverseEntity="Combination" syncable="YES"/>
+    </entity>
+    <entity name="CombinationThumbnail" representedClassName=".CombinationThumbnailMO" syncable="YES">
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="combination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Combination" inverseName="thumbnails" inverseEntity="Combination" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cloth" positionX="-54" positionY="18" width="128" height="118"/>
+        <element name="ClothImage" positionX="-297" positionY="81" width="128" height="73"/>
+        <element name="Combination" positionX="-74" positionY="243" width="128" height="118"/>
+        <element name="CombinationImage" positionX="-252" positionY="258" width="128" height="73"/>
+        <element name="CombinationThumbnail" positionX="-171" positionY="171" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,14 @@
+PODS:
+  - YangMingShan (1.1.0):
+    - YangMingShan/YMSPhotoPicker (= 1.1.0)
+  - YangMingShan/YMSPhotoPicker (1.1.0)
+
+DEPENDENCIES:
+  - YangMingShan
+
+SPEC CHECKSUMS:
+  YangMingShan: 4561ff6c813ba070621302c48229a222f67bccf6
+
+PODFILE CHECKSUM: d902f2c54caf1f636a0a2fdb26b0a051cd58acfc
+
+COCOAPODS: 1.0.1

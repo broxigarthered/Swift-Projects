@@ -113,5 +113,4 @@ class TagsTableViewController: UITableViewController, UITextFieldDelegate {
         
         return tags
     }
-
 }

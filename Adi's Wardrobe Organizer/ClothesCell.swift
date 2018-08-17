@@ -26,14 +26,15 @@ class ClothesCell: UITableViewCell {
     var deleteOnDragRelease = false
     var clothToDelete: ClothMO?
     
-    
-    func activateShit(){
+    // Adds recognizer to the cell
+    func initiatePotentialCellDeletion(){
         let recognizer = UIPanGestureRecognizer(target: self, action: #selector(ClothesCell.handlePan(_:)))
         recognizer.delegate = self
         addGestureRecognizer(recognizer)
     }
     
-    //MARK: - horizontal pan gesture methods
+    //MARK: Gesture functions
+    // horizontal pan gesture method, that tells when the cell is moved enough, so it can be deleted
     func handlePan(_ recognizer: UIPanGestureRecognizer) {
         // 1
         if recognizer.state == .began {
@@ -67,8 +68,6 @@ class ClothesCell: UITableViewCell {
             }
         }
     }
-    
-    
     
     override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if let panGestureRecognizer = gestureRecognizer as? UIPanGestureRecognizer {

@@ -76,7 +76,7 @@ extension Double {
     }
 }
 
-// MARK: Extensions
+// MARK: Array Extensions
 extension Array where Element : Hashable {
     var unique: [Element] {
         return Array(Set(self))

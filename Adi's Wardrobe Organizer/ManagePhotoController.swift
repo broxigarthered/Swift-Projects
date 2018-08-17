@@ -19,8 +19,6 @@ protocol ManagePhotoControllerDeleteImage {
 
 class ManagePhotoController: UIViewController, UINavigationControllerDelegate, UIPopoverPresentationControllerDelegate, PopOverPhotoViewControllerDelegate {
     
-    @IBOutlet weak var managePhotoImageView: UIImageView!
-    
     var delegate: ManagePhotoControllerDelegate? = nil
     var mpcDeleteImageDelegate: ManagePhotoControllerDeleteImage? = nil
     
@@ -30,6 +28,8 @@ class ManagePhotoController: UIViewController, UINavigationControllerDelegate, U
     var dbCurrentIndex: Int = 0
     let blurEffect = UIBlurEffect(style: .dark)
     var blurEffectView = UIVisualEffectView()
+    
+    @IBOutlet weak var managePhotoImageView: UIImageView!
     
     @IBOutlet weak var button: UIButton!
     
@@ -122,7 +122,4 @@ class ManagePhotoController: UIViewController, UINavigationControllerDelegate, U
         // Return no adaptive presentation style, use default presentation behaviour
         return .none
     }
-    
-    
-    
 }

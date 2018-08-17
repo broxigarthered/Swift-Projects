@@ -3,20 +3,16 @@ import CoreData
 import SDWebImage
 
 class ClothesCollectionController: UITableViewController, ManagePhotoControllerDelegate, NSFetchedResultsControllerDelegate, ClothCellDelegate, ManagePhotoControllerDeleteImage  {
+
+    @IBOutlet weak var addButton: UIBarButtonItem!
     
     var clothesCollectionType: String = ""
     
-    let defaults = UserDefaults.standard
-    
     var temporalImages = NSMutableArray()
-    
-    @IBOutlet weak var addButton: UIBarButtonItem!
     
     var selectedCellIndexPath: IndexPath?
     var currentIndex: Int = 0
-    
-    var deselectedCellHeight: CGFloat = 150.0
-    var selectedCellHeight: CGFloat = 300.0
+
     var currentImage: UIImageView!
     var defaultImage: UIImageView!
     
@@ -42,6 +38,7 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Modify the separators
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         tableView.separatorColor = UIColor(red: 100.0/255.0, green: 150.0/255.0, blue: 240.0/255.0, alpha: 0.8)
         tableView.separatorEffect = .none
@@ -50,14 +47,14 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         //
-        let isAccessedFromNewCombination = self.defaults.bool(forKey: "sholdOpenNewCombination")
+        let isAccessedFromNewCombination = Constants.defaults.bool(forKey: "sholdOpenNewCombination")
         if isAccessedFromNewCombination {
-            self.tabBarController?.tabBar.isHidden = true
+            self.tabBarController?.tabBar.isHidden = false
         }
         
         
-        let currentSeason = defaults.string(forKey: "currentSeason")
-        let currentClothType = defaults.string(forKey: "currentClothType")
+        let currentSeason = Constants.defaults.string(forKey: "currentSeason")
+        let currentClothType = Constants.defaults.string(forKey: "currentClothType")
         
         // fetch the clothes with predicate only from certain season collection, then certain cloth type
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cloth")
@@ -69,6 +66,8 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
         let compoundPredicate: NSCompoundPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [seasonPredicate, clothTypePredicate])
         fetchRequest.predicate = compoundPredicate
         
+        
+        // loads all the images from the DB
         if let moc = (UIApplication.shared.delegate as? AppDelegate)?.managedObjectContext{
             
             fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
@@ -89,10 +88,12 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
         tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
+    // In this function, we cache all the images initially, so when we are loading them for the second time, they load faster
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ClothesCell
         
+        // Check if the current cell is clicked, so it knows when what to hide
         if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath{
             cell.managePhoto.isHidden = false
             cell.deletePhoto.isHidden = false
@@ -103,7 +104,7 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
             cell.blurEffectView.isHidden = true
         }
         
-        let isAccessedFromNewCombination = self.defaults.bool(forKey: "sholdOpenNewCombination")
+        let isAccessedFromNewCombination = Constants.defaults.bool(forKey: "sholdOpenNewCombination")
         
         if isAccessedFromNewCombination {
             let isSelected = self.clothes[indexPath.row].isSelected
@@ -116,14 +117,13 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
             }
         }
         
-        //self.clothImageRelation = self.clothes[indexPath.row].value(forKey: "imageTest") as! ClothImageMO
-        //cell.clothImageView?.image = UIImage(data: self.clothImageRelation.image! as Data)
-        //print((self.clothImageRelation.image?.count)!/1024)
+        // Here we get the "hash" string for the image, so we know where to cache it and eventually get it from the alredy existing images. If the image does not exist, we save the newly cached image.
         let sdWebImageManager: SDWebImageManager = SDWebImageManager.shared()
         let imageName = self.clothes[indexPath.row].clothImageName
         let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
         let pathsNSURL = URL(string: paths)
         
+        // caches the image if it doesn't alredy exist
         DispatchQueue.main.async {
             if !sdWebImageManager.cachedImageExists(for: pathsNSURL) {
                 let imageToSet = UIImage(contentsOfFile: paths)
@@ -133,10 +133,12 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
             cell.clothImageView.sd_setImage(with: pathsNSURL)
         }
         
-        cell.activateShit()
+        // Enables the cell for recognizing gesture, so it knows when to delete an image
+        cell.initiatePotentialCellDeletion()
         cell.selectionStyle = .none
         cell.delegate = self
         
+        // Maps the cell cloth from the db, for potentiall deletion
         cell.clothToDelete = self.clothes[indexPath.row]
         
         return cell
@@ -149,7 +151,7 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
         
         // Check whether the cloth collection is opened through the new combination controller. We have to know that in order not to increase the row height when clicked.
         
-        let isAccessedFromNewCombination = self.defaults.bool(forKey: "sholdOpenNewCombination")
+        let isAccessedFromNewCombination = Constants.defaults.bool(forKey: "sholdOpenNewCombination")
         
         if isAccessedFromNewCombination {
             
@@ -161,7 +163,7 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
                 cell.markedRow.isHidden = false
             }
             
-            self.defaults.set(true, forKey: "newImageAdded")
+            Constants.defaults.set(true, forKey: "newImageAdded")
         }
         else {
             
@@ -177,11 +179,12 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
                 cell.blurEffectView.isHidden = false
             }
             
+            //You can also use this method followed by the endUpdates() method to animate the change in the row heights without reloading the cell. // apple
             tableView.beginUpdates()
             tableView.endUpdates()
             
+            // This ensures, that the cell is fully visible once expanded
             if selectedCellIndexPath != nil {
-                // This ensures, that the cell is fully visible once expanded
                 tableView.scrollToRow(at: indexPath, at: .none, animated: true)
             }
             
@@ -205,7 +208,7 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
         
         if let cell = tableView.cellForRow(at: indexPath) as? ClothesCell {
             
-            let isAccessedFromNewCombination = self.defaults.bool(forKey: "sholdOpenNewCombination")
+            let isAccessedFromNewCombination = Constants.defaults.bool(forKey: "sholdOpenNewCombination")
             if isAccessedFromNewCombination {
                 self.clothes[indexPath.row].isSelected = false
                 cell.markedRow.isHidden = true
@@ -223,10 +226,10 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if selectedCellIndexPath == indexPath{
-            return selectedCellHeight
+            return Constants.clothesCollectionControllerSelectedCellHeight
         }
         
-        return deselectedCellHeight
+        return Constants.clothesCollectionControllerDeselectedCellHeight
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
@@ -328,6 +331,8 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
         
     }
     
+    
+    // Function for deleting given image as param from the DB. Usually gets called from the delegate of the ClothesCell
     func deleteClothImage(_ item: ClothMO){
         
         let alertController = UIAlertController(title: "Delete", message: "Do you want to delete this image?", preferredStyle: .alert)
@@ -358,7 +363,6 @@ class ClothesCollectionController: UITableViewController, ManagePhotoControllerD
                 
                 self.tableView.endUpdates()
             }
-            
         }
         
         alertController.addAction(yesActionController)

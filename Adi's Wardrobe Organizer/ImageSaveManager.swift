@@ -59,8 +59,6 @@ class ImageSaveManager{
         }
         print("no image")
         return image
-        
-        return image
     }
     
     func removeImage(itemName:String) {

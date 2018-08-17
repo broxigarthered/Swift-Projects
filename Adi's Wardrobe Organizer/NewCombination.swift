@@ -16,7 +16,7 @@ import SDWebImage
 let mySpecialNotificationKey = "ThunderseekersGroup.addingPhotos.notificationKey"
 let tagsNotificatorKey = "TagsNotificationKey"
 
-class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSFetchedResultsControllerDelegate, YMSPhotoPickerViewControllerDelegate, ImagesToDeleteDelegate
+class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NSFetchedResultsControllerDelegate, YMSPhotoPickerViewControllerDelegate, ImagesToDeleteOrAddDelegate
 {
     fileprivate var photosAddCombinationViewController: PhotosAddCombination!
     fileprivate var tagsTableViewController: TagsTableViewController!
@@ -193,6 +193,7 @@ class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UI
         let pickImageFromLibrary = UIAlertAction(title: "Browse Photo Library", style: .default, handler: { (action: UIAlertAction!) in
             
             // MARK: Call the advanced album photoview
+            
             self.yms_presentCustomAlbumPhotoView(self.pickerViewController, delegate: self)
         })
         
@@ -212,14 +213,16 @@ class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UI
         
         let pickImageFromCollection = UIAlertAction(title: "Browse Cloth Collection", style: .default, handler: { (action: UIAlertAction!) in
             
-            //MARK: presetnt the cloth collection view controller
-            self.performSegue(withIdentifier: "openClothCollection", sender: nil)
             
             //MARK: tell the collection view controller that it is opened through new combination
             self.defaults.set(true, forKey: "sholdOpenNewCombination")
+            
+            //MARK: presetnt the cloth collection view controller
+            self.performSegue(withIdentifier: "openClothCollection", sender: nil)
+            
         })
         
-        optionMenu.addAction(pickImageFromCollection)
+        // optionMenu.addAction(pickImageFromCollection)
         
         self.present(optionMenu, animated: true, completion: nil)
     }
@@ -291,7 +294,6 @@ class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UI
     }
     
     // MARK: Observer pattern -> NotificationCenter method
-    
     func notifyTagsShouldGetSaved()
     {
         NotificationCenter.default.post(name: Notification.Name(rawValue: tagsNotificatorKey), object: self)
@@ -340,6 +342,7 @@ class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UI
         picker.present(alertController, animated: true, completion: nil)
     }
     
+    // Gets called after the user has finished picking images
     func photoPickerViewController(_ picker: YMSPhotoPickerViewController!, didFinishPickingImages photoAssets: [PHAsset]!) {
         // Remember images you get here is PHAsset array, you need to implement PHImageManager to get UIImage data by yourself
         picker.dismiss(animated: true) {
@@ -386,6 +389,7 @@ class NewCombination: UITableViewController, UIImagePickerControllerDelegate, UI
         dbManager.cacheImage(imageName: imageName)
         
         self.transferImagesToPhotosCollection()
+        dismiss(animated: true, completion: nil)
     }
     
     func appendImagesFromCameraOrLibrary(shouldManageCombination: Bool, temporalImage: Data) {

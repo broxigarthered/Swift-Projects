@@ -144,6 +144,7 @@ NSFetchedResultsControllerDelegate, CombinationCellDelegate {
         _ = navigationController?.popViewController(animated: true)
     }
     
+    // Here we set the animating images cycle
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
         let cell = tableView.cellForRow(at: indexPath) as! CombinationsCell
@@ -160,7 +161,6 @@ NSFetchedResultsControllerDelegate, CombinationCellDelegate {
         
         cell.combinationsImage?.animationImages = animationImages
         cell.combinationsImage?.animationDuration = self.combinations[indexPath.row].combinationImages.count < 4 ? 3 : 6
-        
         
         // height regulator
         if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath{
@@ -349,7 +349,6 @@ NSFetchedResultsControllerDelegate, CombinationCellDelegate {
                 self.tableView.endUpdates()
             }
         }
-        
         
         alertController.addAction(yesAction)
         alertController.addAction(noAction)

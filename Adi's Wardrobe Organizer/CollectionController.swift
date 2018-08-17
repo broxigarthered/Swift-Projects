@@ -9,14 +9,10 @@
 import UIKit
 
 class CollectionController: UITableViewController {
-    
     var season = ""
     var clothesCollection = ""
     var selectedCellIndexPath: IndexPath?
-    var selectedCellHeight: CGFloat = 280.0
-    var deselectedCellHeight: CGFloat = 150.0
     var currentDefaultImage: UIImageView!
-    let defaults = UserDefaults.standard
     
     @IBOutlet var doneButton: UIBarButtonItem!
     
@@ -24,7 +20,7 @@ class CollectionController: UITableViewController {
         super.viewDidLoad()
         setTitle()
         
-        let isAccessedFromNewCombination = defaults.bool(forKey: "sholdOpenNewCombination")
+        let isAccessedFromNewCombination = Constants.defaults.bool(forKey: "sholdOpenNewCombination")
         if (isAccessedFromNewCombination) {
             self.tabBarController?.tabBar.isHidden = true
         }
@@ -45,14 +41,13 @@ class CollectionController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath) as! SeasonCollectionCell
         currentDefaultImage = cell.collectionImageView
         
+        // This section is for the enlargement of the row
         if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath {
             selectedCellIndexPath = nil
             cell.browseCollection.isHidden = true
             cell.blurEffectView.isHidden = true
         } else {
             selectedCellIndexPath = indexPath
-////            cell.browseCollection.isHidden = false
-////            cell.blurEffectView.isHidden = false
         }
         
         if selectedCellIndexPath != nil {
@@ -80,6 +75,7 @@ class CollectionController: UITableViewController {
         // saving the current cloth type for the core data
         saveCurrentClothType(indexPath)
         
+        // Gets to the next View, if the cell is clicked for the second time
         if selectedCellIndexPath == nil {
             self.performSegue(withIdentifier: "showClothesCollection", sender: nil)
         }
@@ -100,85 +96,19 @@ class CollectionController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! SeasonCollectionCell
         
         if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath {
-            cell.browseCollection.isHidden = false
-            cell.blurEffectView.isHidden = false
+           // cell.browseCollection.isHidden = false
+            //cell.blurEffectView.isHidden = false
         } else {
             cell.browseCollection.isHidden = true
             cell.blurEffectView.isHidden = true
         }
         
-        switch indexPath.row {
-        case 0:
-            cell.collectionType.text = "Outwear"
-            cell.collectionImageView.image = UIImage(named: "outwear")
-            
-        case 1:
-            cell.collectionType.text = "Blazers"
-            cell.collectionImageView.image = UIImage(named: "blazers")
-            
-        case 2:
-            cell.collectionType.text = "Dresses"
-            cell.collectionImageView.image = UIImage(named: "dresses")
-            
-        case 3:
-            cell.collectionType.text = "Jumpsuits"
-            cell.collectionImageView.image = UIImage(named: "jumpsuits")
-            
-        case 4:
-            cell.collectionType.text = "Tops"
-            cell.collectionImageView.image = UIImage(named: "tops")
-            
-        case 5:
-            cell.collectionType.text = "Trousers"
-            cell.collectionImageView.image = UIImage(named: "trousers")
-            
-        case 6:
-            cell.collectionType.text = "Jeans"
-            cell.collectionImageView.image = UIImage(named: "jeans")
-            
-        case 7:
-            cell.collectionType.text = "Shorts"
-            cell.collectionImageView.image = UIImage(named: "shorts")
-            
-        case 8:
-            cell.collectionType.text = "Skirts"
-            cell.collectionImageView.image = UIImage(named: "skirts")
-            
-        case 9:
-            cell.collectionType.text = "Knitwear"
-            cell.collectionImageView.image = UIImage(named: "knitwear")
-            
-        case 10:
-            cell.collectionType.text = "T-Shirts"
-            cell.collectionImageView.image = UIImage(named: "t-shirts")
-            
-        case 11:
-            cell.collectionType.text = "Sweatshirts"
-            cell.collectionImageView.image = UIImage(named: "sweatshirts")
-            
-        case 12:
-            cell.collectionType.text = "Beachwear"
-            cell.collectionImageView.image = UIImage(named: "beachwear")
-            
-        case 13:
-            cell.collectionType.text = "Gymwear"
-            cell.collectionImageView.image = UIImage(named: "gymwear")
-            
-        case 14:
-            cell.collectionType.text = "Shoes"
-            cell.collectionImageView.image = UIImage(named: "shoes")
-            
-        case 15:
-            cell.collectionType.text = "Bags"
-            cell.collectionImageView.image = UIImage(named: "bags")
-            
-        case 16:
-            cell.collectionType.text = "Accessories"
-            cell.collectionImageView.image = UIImage(named: "accessories")
-            
-        default:
-            break
-        }
+        // TODO move this as array in constant struct and create method
+        
+        // Set the cell image and name
+        let (collectionType,imageName) = getCollectionType(row: indexPath.row)
+        cell.collectionType.text = collectionType
+        cell.collectionImageView.image = imageName
         
         return cell
     }
@@ -188,83 +118,50 @@ class CollectionController: UITableViewController {
         return 17
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         
+        // Set the cell height
         if selectedCellIndexPath == indexPath{
-            
-            
-            return selectedCellHeight
+            return Constants.collectionControllerSelectedCellHeight
         }
         
-        return deselectedCellHeight
+        return Constants.collectionControllerDeselectedCellHeight
     }
     
     // MARK: Additional Methods
+    // Function for getting the collection type (String) and the image of the corresponding collection (UIImage)
+    // Param: row: Integer
+    func getCollectionType(row: Int) -> (String, UIImage) {
+        return (Constants.collectionControllerCollectionTypes[row], Constants.collectionControllerCollectionImages[row])
+    }
+
+    // Function for setting the current navigation title, to the corresponded season, based on the clicked cell in the Seasons Controller
     func setTitle() -> Void {
-        let defaults = UserDefaults.standard
-        let season = defaults.value(forKey: "currentSeason")
+        let season = Constants.defaults.value(forKey: "currentSeason")
         
         switch season as! String {
         case "spring":
-            self.navigationItem.title = "Spring Collection"
+            self.navigationItem.title = Constants.collectionControllerNavigationTitles[0]
             
         case "summer":
-            self.navigationItem.title = "Summer Collection"
+            self.navigationItem.title = Constants.collectionControllerNavigationTitles[1]
             
         case "fall":
-            self.navigationItem.title = "Fall Collection"
+            self.navigationItem.title = Constants.collectionControllerNavigationTitles[2]
             
         case "winter":
-            self.navigationItem.title = "Winter Collection"
+            self.navigationItem.title = Constants.collectionControllerNavigationTitles[3]
             
         default:
             break
         }
     }
     
+    // Function for setting the current cloth type in UserDefaults, so when we save an image in the DB, it knows where to save it
     func saveCurrentClothType(_ indexPath: IndexPath) {
-        
-        let defaults = UserDefaults.standard
-        
-        switch indexPath.row {
-        case 0:
-            defaults.setValue("outwear", forKey: "currentClothType")
-        case 1:
-            defaults.setValue("blazers", forKey: "currentClothType")
-        case 2:
-            defaults.setValue("dresses", forKey: "currentClothType")
-        case 3:
-            defaults.setValue("jumpsuits", forKey: "currentClothType")
-        case 4:
-            defaults.setValue("tops", forKey: "currentClothType")
-        case 5:
-            defaults.setValue("trousers", forKey: "currentClothType")
-        case 6:
-            defaults.setValue("jeans", forKey: "currentClothType")
-        case 7:
-            defaults.setValue("shorts", forKey: "currentClothType")
-        case 8:
-            defaults.setValue("skirts", forKey: "currentClothType")
-        case 9:
-            defaults.setValue("knitwear", forKey: "currentClothType")
-        case 10:
-            defaults.setValue("tshirts", forKey: "currentClothType")
-        case 11:
-            defaults.setValue("sweatshirts", forKey: "currentClothType")
-        case 12:
-            defaults.setValue("beachwear", forKey: "currentClothType")
-        case 13:
-            defaults.setValue("gymwear", forKey: "currentClothType")
-        case 14:
-            defaults.setValue("shoes", forKey: "currentClothType")
-        case 15:
-            defaults.setValue("bags", forKey: "currentClothType")
-        case 16:
-            defaults.setValue("accessories", forKey: "currentClothType")
-        default:
-            break
-        }
+        Constants.defaults.setValue(Constants.collectionControllerNSUserDefaultsTitles[indexPath.row], forKey: "currentClothType")
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
@@ -272,7 +169,7 @@ class CollectionController: UITableViewController {
     
     @IBAction func doneButtonPressed(_ sender: AnyObject) {
         //navigationController?.popViewController(animated: true)
-        self.defaults.set(false, forKey: "sholdOpenNewCombination")
+        Constants.defaults.set(false, forKey: "sholdOpenNewCombination")
         
         
         // TODO: get all the clothes from the combinations which are selected from the core data

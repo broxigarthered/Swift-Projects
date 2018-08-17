@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-protocol ImagesToDeleteDelegate {
+protocol ImagesToDeleteOrAddDelegate {
     func deleteImagesAtIndexes(indexes: [Int], imageName: String)
     func addNewImages()
 }
@@ -19,7 +19,7 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
     @IBOutlet weak var viewButton: UIButton!
     
     // toq delegat zaedno s methoda 6te gi viknem kogato se cukne delete
-    var delegate: ImagesToDeleteDelegate!
+    var delegate: ImagesToDeleteOrAddDelegate!
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 5, left: 5.0, bottom: 3, right: 3)
     fileprivate var blurEffect: UIBlurEffect!
@@ -38,8 +38,8 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
+        // fixing the boxes sizes, spacings, etc..
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        //var width = UIScreen.main.bounds.width
         layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
       
         layout.minimumInteritemSpacing = 0
@@ -58,7 +58,7 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //cache the images when the view appears
+        //cache the images when the view begins to appear
         
         let dbManager = ImageSaveManager.sharedInstance
         DispatchQueue.main.async {
@@ -72,6 +72,7 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CombinationsImageCell
 
+        // managing the image in the cell
         cell.imageView.contentMode = .scaleAspectFill
         cell.layer.shouldRasterize = true
         cell.layer.rasterizationScale = UIScreen.main.scale
@@ -150,7 +151,6 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
         // remove the blur effect from the currently selected cell
         if selectedCellIndexPath != nil && selectedCellIndexPath == indexPath {
             selectedCellIndexPath = nil
-            
             // remove blur effect
             if self.blurEffectView != nil {
                 for subview in cell.imageView.subviews {
@@ -167,7 +167,7 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
             //cell.isSelected = true
             
             //check if the clicked cell is the first one, if it is no blur or buttons are showed
-            // the delegate is called to save images
+            // the delegate is called in new combination, to pop the uiAlert to save images
             if(indexPath.row == 0){
                 self.delegate.addNewImages()
             }
@@ -220,13 +220,12 @@ class PhotosAddCombination: UICollectionViewController, UICollectionViewDelegate
             let imageName = self.imagesNames[indexOfSelectedItem!]
             let imageToSet = dbImageSaverInsntance.getImage(indexOfSelectedItem!, imageName)
             
-            
             destinationViewController.imageToSet = imageToSet
         }
         
     }
     
-    //MARK: Custom Methods
+    //MARK: Custom Methods  - Observer
     func actOnSpecialNotification(){
         self.collectionView?.reloadData()
     }

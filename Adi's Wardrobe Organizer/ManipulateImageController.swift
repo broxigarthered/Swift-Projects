@@ -17,6 +17,8 @@ class ManipulateImageController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet var backgroundImage: UIImageView!
     
+    @IBOutlet weak var buttonStackView: UIStackView!
+    
     var hasChosenImage: Bool = false
     var clothImage: UIImageView!
     var currentDefaultImage: UIImage!
@@ -24,14 +26,25 @@ class ManipulateImageController: UIViewController, UIImagePickerControllerDelega
     var cloth: ClothMO!
     var clothImageMO: ClothImageMO!
     
-    let userDefaults = UserDefaults()
-    
     override func viewWillAppear(_ animated: Bool) {
+        
+        self.buttonStackView.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
+        self.messageLabel.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
+        
         // checks if should move to previous controller
-        let shouldChange = self.userDefaults.bool(forKey: "shouldMoveToPreviousController")
+        let shouldChange = Constants.defaults.bool(forKey: "shouldMoveToPreviousController")
         if shouldChange {
-            self.userDefaults.set(false, forKey: "shouldMoveToPreviousController")
+            Constants.defaults.set(false, forKey: "shouldMoveToPreviousController")
             self.performSegue(withIdentifier: "unwindToHomeScreen", sender: nil)   
+        }
+    }
+    
+    // Here we create the enalrgement effect of the text and the buttons
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 0.7) {
+            self.buttonStackView.transform = CGAffineTransform(scaleX: 1,y: 1)
+            self.messageLabel.transform = CGAffineTransform(scaleX: 1, y: 1)
         }
     }
     
@@ -57,6 +70,7 @@ class ManipulateImageController: UIViewController, UIImagePickerControllerDelega
         backgroundImage.image = currentDefaultImage
     }
     
+    // Once image is picked, calls this function to save the new image
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         // MARK: Cut image once
@@ -71,7 +85,7 @@ class ManipulateImageController: UIViewController, UIImagePickerControllerDelega
         
         backgroundImage.image = UIImage(data: UIImagePNGRepresentation(resizedImage!)!)
         
-        self.userDefaults.set(true, forKey: "shouldMoveToPreviousController")
+        Constants.defaults.set(true, forKey: "shouldMoveToPreviousController")
         dismiss(animated: true, completion: nil)
     }
     
@@ -100,10 +114,8 @@ class ManipulateImageController: UIViewController, UIImagePickerControllerDelega
     
     func saveData(_ image: UIImage){
         
-        let defaults = UserDefaults.standard
-        
-        let currentSeason = defaults.string(forKey: "currentSeason")
-        let currentClothType = defaults.string(forKey: "currentClothType")
+        let currentSeason = Constants.defaults.string(forKey: "currentSeason")
+        let currentClothType = Constants.defaults.string(forKey: "currentClothType")
         let dbContext = ImageSaveManager.sharedInstance
         
         
@@ -121,7 +133,6 @@ class ManipulateImageController: UIViewController, UIImagePickerControllerDelega
             let imageName = dbContext.generateImageName()
             dbContext.saveImageDocumentDirectory(image: image, imageName: imageName)
             cloth.clothImageName = imageName
-
             
             print("IMAGE SIZE \((UIImagePNGRepresentation(image)?.count)!/1024)")
             

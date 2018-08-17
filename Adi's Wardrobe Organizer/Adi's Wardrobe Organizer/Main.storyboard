@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G20015" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sN3-az-j6Y">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sN3-az-j6Y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SPL-6b-qhj" id="Dtz-2l-NtY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0AA-ib-9gf">
@@ -136,8 +136,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sN3-az-j6Y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Seasons" image="season" selectedImage="season" id="g8z-FR-1sv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iaz-Pk-TQH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Iaz-Pk-TQH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -177,8 +177,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0F-X0-Mvv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="FFC-Jw-v66"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ijd-lj-TlQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ijd-lj-TlQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -203,11 +203,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEQ-nX-uOM" id="tex-C7-cty">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwE-XS-Pg2">
-                                            <rect key="frame" x="8" y="8" width="359" height="183"/>
+                                            <rect key="frame" x="16" y="11" width="343" height="178"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <state key="normal" title="New Item"/>
                                         </button>
@@ -241,8 +241,8 @@
                 <navigationController id="azI-Wq-ykJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Wishlist" image="wishlist" selectedImage="collection" id="kIM-jb-TcN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tRK-yq-aY8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tRK-yq-aY8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -270,7 +270,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dBX-tc-c6j">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNN-Pr-zMh">
                                             <rect key="frame" x="158.5" y="52.5" width="59.5" height="45.5"/>
@@ -326,7 +326,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijt-YN-wE4">
-                                            <rect key="frame" x="8" y="8" width="359" height="134"/>
+                                            <rect key="frame" x="16" y="11" width="343" height="128"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
                                             <state key="normal" title="New Combination">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -410,7 +410,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="NewCombination" id="VWu-yl-Tug" customClass="NewCombination" customModule="Adi_s_Wardrobe_Organizer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k5e-ww-s5J">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -449,7 +449,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZM-uo-8Rp">
-                                                    <rect key="frame" x="0.0" y="8" width="375" height="350"/>
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="344"/>
                                                     <color key="backgroundColor" red="1" green="0.99215686274509807" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <segue destination="5AF-wl-56c" kind="embed" identifier="testPhotosContainer" id="XgW-R2-KEa"/>
@@ -528,8 +528,8 @@
                     <tabBarItem key="tabBarItem" title="Combinations" image="combination" id="CmD-Rw-f98"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bTT-Ns-VFI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bTT-Ns-VFI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -554,14 +554,14 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c3S-xl-vcV" id="vnd-Rl-Qry">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring" translatesAutoresizingMaskIntoConstraints="NO" id="rB8-Lg-7nn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                         </imageView>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnG-TF-tEj">
-                                            <rect key="frame" x="0.0" y="63" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="61" width="375" height="43"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uWT-mS-J0d">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -573,7 +573,7 @@
                                             <blurEffect style="light"/>
                                         </visualEffectView>
                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-AB-zZS">
-                                            <rect key="frame" x="105.5" y="63" width="164" height="36"/>
+                                            <rect key="frame" x="106" y="61" width="164" height="36"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="24"/>
                                             <size key="titleShadowOffset" width="0.5" height="1"/>
                                             <state key="normal" title="Browse Collection">
@@ -581,13 +581,11 @@
                                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
-                                                <segue destination="HsG-lg-JBQ" kind="show" identifier="showClothesCollection" id="kEy-g0-qjV">
-                                                    <nil key="action"/>
-                                                </segue>
+                                                <segue destination="HsG-lg-JBQ" kind="show" identifier="showClothesCollection" id="kEy-g0-qjV"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outwear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uma-oN-uDK">
-                                            <rect key="frame" x="142.5" y="26" width="90.5" height="47"/>
+                                            <rect key="frame" x="142" y="29" width="91" height="41.5"/>
                                             <fontDescription key="fontDescription" name="Baskerville-BoldItalic" family="Baskerville" pointSize="22"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -666,7 +664,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-nN-Sb5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153"/>
                                         </imageView>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tU-0h-Ozz">
                                             <rect key="frame" x="0.0" y="115" width="375" height="35"/>
@@ -680,7 +678,7 @@
                                             <blurEffect style="light"/>
                                         </visualEffectView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be2-G3-uEu">
-                                            <rect key="frame" x="106" y="120" width="30" height="30"/>
+                                            <rect key="frame" x="106" y="117" width="30" height="30"/>
                                             <size key="titleShadowOffset" width="0.80000000000000004" height="0.80000000000000004"/>
                                             <state key="normal" image="edit">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -688,13 +686,11 @@
                                             </state>
                                             <connections>
                                                 <action selector="showManagedPopOver:" destination="HsG-lg-JBQ" eventType="touchUpInside" id="Ym2-uy-NLo"/>
-                                                <segue destination="rq1-4i-y86" kind="show" identifier="managePhoto" id="IXi-hM-9OC">
-                                                    <nil key="action"/>
-                                                </segue>
+                                                <segue destination="rq1-4i-y86" kind="show" identifier="managePhoto" id="IXi-hM-9OC"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVa-JG-Wpn">
-                                            <rect key="frame" x="203" y="120" width="30" height="30"/>
+                                            <rect key="frame" x="203" y="117" width="30" height="30"/>
                                             <size key="titleShadowOffset" width="0.80000000000000004" height="0.80000000000000004"/>
                                             <state key="normal" image="deleteManage">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -705,7 +701,7 @@
                                             </connections>
                                         </button>
                                         <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="Jry-Ey-SMS">
-                                            <rect key="frame" x="166.5" y="63" width="42" height="24"/>
+                                            <rect key="frame" x="167" y="63" width="42" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="42" id="FQT-VS-fkK"/>
                                                 <constraint firstAttribute="height" constant="24" id="KiJ-jX-MrA"/>
@@ -795,7 +791,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBG-Q8-fd9">
-                                <rect key="frame" x="150" y="585" width="77" height="38"/>
+                                <rect key="frame" x="150" y="536" width="77" height="38"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3es-b8-A1y">
                                     <rect key="frame" x="0.0" y="0.0" width="77" height="38"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -812,7 +808,7 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-lB-OQc">
-                                <rect key="frame" x="149.5" y="589" width="78" height="30"/>
+                                <rect key="frame" x="150" y="540" width="78" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="Mlq-5P-jJg"/>
                                 </constraints>
@@ -864,14 +860,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER4-G1-Tho">
-                                <rect key="frame" x="37" y="88" width="77" height="30"/>
+                                <rect key="frame" x="37.5" y="68" width="76" height="30"/>
                                 <state key="normal" title="Take photo"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="HI6-Xr-l7o" eventType="touchUpInside" id="CJI-sJ-pQr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evA-K8-bSp">
-                                <rect key="frame" x="51" y="28" width="48" height="30"/>
+                                <rect key="frame" x="51" y="8" width="48" height="30"/>
                                 <state key="normal" title="Library"/>
                                 <connections>
                                     <action selector="choosePhotoFromLibrary:" destination="HI6-Xr-l7o" eventType="touchUpInside" id="2bi-jq-Ofu"/>
@@ -904,9 +900,12 @@
                     <view key="view" contentMode="scaleToFill" id="Jhp-Ss-Umk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="341" affinity="minY"/>
+                        </userGuides>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-5k-asK">
-                                <rect key="frame" x="0.0" y="-5" width="375" height="672"/>
+                                <rect key="frame" x="0.0" y="15" width="375" height="652"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmm-cs-zMQ">
                                 <rect key="frame" x="341" y="28" width="30" height="30"/>
@@ -921,13 +920,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a photo of your cloth or browse collection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wee-j3-Uf0">
-                                <rect key="frame" x="27" y="158" width="322" height="143.5"/>
+                                <rect key="frame" x="27" y="158.5" width="322" height="143.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eyn-lT-KoI">
-                                <rect key="frame" x="128" y="361.5" width="119" height="79"/>
+                                <rect key="frame" x="128" y="362" width="119" height="79"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-b6-ADv">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="79"/>
@@ -998,6 +997,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="Ip9-5k-asK" id="pnj-e3-yyv"/>
                         <outlet property="browseCollectionButton" destination="xxD-M3-eFd" id="5Ae-Op-Mx0"/>
+                        <outlet property="buttonStackView" destination="ayt-b6-ADv" id="Mcr-mo-BP2"/>
                         <outlet property="closeButton" destination="Kmm-cs-zMQ" id="L8U-c3-Ywn"/>
                         <outlet property="messageLabel" destination="wee-j3-Uf0" id="yb0-ZV-0gS"/>
                         <outlet property="takePhotoButton" destination="OLL-3d-ffk" id="fHO-Nj-0db"/>
@@ -1014,8 +1014,8 @@
                 <navigationController storyboardIdentifier="NavigationCollectionControllerID" id="JsC-4S-A6Q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Collections" image="collection" selectedImage="collection" id="UIb-8m-LiD"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BqZ-kW-JqE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="BqZ-kW-JqE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1031,7 +1031,7 @@
             <objects>
                 <collectionViewController storyboardIdentifier="PhotosAddCombination" id="5AF-wl-56c" customClass="PhotosAddCombination" customModule="Adi_s_Wardrobe_Organizer" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="9aK-da-bjw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="344"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="cjT-08-A1H">
@@ -1041,7 +1041,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="Cell" id="UV2-uE-cQJ" customClass="CombinationsImageCell" customModule="Adi_s_Wardrobe_Organizer" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="UV2-uE-cQJ" customClass="CombinationsImageCell" customModule="Adi_s_Wardrobe_Organizer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1049,7 +1049,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder-plus" translatesAutoresizingMaskIntoConstraints="NO" id="Kz8-E4-Dn1">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="0.0"/>
                                         </imageView>
                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsl-s9-Mtg">
                                             <rect key="frame" x="63" y="49" width="49" height="32"/>
@@ -1064,7 +1064,7 @@
                                             </connections>
                                         </button>
                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ea-v1-Mcz">
-                                            <rect key="frame" x="8" y="49" width="42" height="32"/>
+                                            <rect key="frame" x="8" y="-16" width="42" height="32"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="20"/>
                                             <size key="titleShadowOffset" width="0.80000000000000004" height="0.80000000000000004"/>
                                             <state key="normal" title="View">
@@ -1162,9 +1162,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="QII-NM-Hg3" firstAttribute="top" secondItem="cNB-xx-Uwy" secondAttribute="top" constant="5" id="224-nm-ZnW"/>
-                                                <constraint firstItem="QII-NM-Hg3" firstAttribute="leading" secondItem="cNB-xx-Uwy" secondAttribute="leadingMargin" constant="-8" id="T2n-tL-8cP"/>
                                                 <constraint firstAttribute="bottom" secondItem="QII-NM-Hg3" secondAttribute="bottom" constant="3" id="Txj-Ef-HTp"/>
                                                 <constraint firstAttribute="trailing" secondItem="QII-NM-Hg3" secondAttribute="trailing" id="ir4-Hv-Bvo"/>
+                                                <constraint firstItem="QII-NM-Hg3" firstAttribute="leading" secondItem="cNB-xx-Uwy" secondAttribute="leading" id="wC0-ZN-fTb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1308,11 +1308,11 @@
                         <viewControllerLayoutGuide type="bottom" id="QXu-gT-x1U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HbB-sZ-Tot">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="344"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="su3-8U-GC4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="344"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1348,7 +1348,7 @@
         <image name="wishlist" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="7YG-XN-MAW"/>
         <segue reference="7QM-GK-aRK"/>
-        <segue reference="mvC-YG-yEU"/>
     </inferredMetricsTieBreakers>
 </document>

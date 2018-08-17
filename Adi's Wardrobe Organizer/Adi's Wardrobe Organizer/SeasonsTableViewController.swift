@@ -13,13 +13,7 @@ class SeasonsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.tableView.estimatedRowHeight = 100
-//        self.tableView.rowHeight = UITableViewAutomaticDimension
-//        
-//        self.tableView.setNeedsLayout()
-//        self.tableView.layoutIfNeeded()
-        
+
         navigationController?.hidesBarsOnSwipe = false
         //navigationController?.setNavigationBarHidden(false, animated: true)
         
@@ -60,21 +54,19 @@ class SeasonsTableViewController: UITableViewController {
         return cell
     }
     
+    // Here we set the current season, so the next VCs (Clothes Collection, Clothes Combination.. etc) know to which key to store the upcoming data
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // get the user defaults
-        let defaults = UserDefaults.standard
         
         let currentIndexRow = indexPath.row
         switch currentIndexRow {
         case 0:
-            defaults.setValue("spring", forKey: "currentSeason")
+            Constants.defaults.setValue("spring", forKey: "currentSeason")
         case 1:
-            defaults.setValue("summer", forKey: "currentSeason")
+            Constants.defaults.setValue("summer", forKey: "currentSeason")
         case 2:
-            defaults.setValue("fall", forKey: "currentSeason")
+            Constants.defaults.setValue("fall", forKey: "currentSeason")
         case 3:
-            defaults.setValue("winter", forKey: "currentSeason")
+            Constants.defaults.setValue("winter", forKey: "currentSeason")
         default:
             break
         }

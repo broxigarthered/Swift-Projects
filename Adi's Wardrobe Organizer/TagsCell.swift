@@ -9,6 +9,5 @@
 import UIKit
 
 class TagsCell: UITableViewCell {
-
     @IBOutlet weak var textField: UITextField!
 }
